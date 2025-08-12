@@ -13,6 +13,15 @@ async function bootstrap() {
     credentials: true,
   });
 
+  // 🚫 Desactiva ETag (304 Not Modified)
+  app.getHttpAdapter().getInstance().disable('etag');
+
+  // 🚫 Fuerza a que nunca se cacheen respuestas
+  app.use((req, res, next) => {
+    res.setHeader('Cache-Control', 'no-store');
+    next();
+  });
+
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
@@ -30,7 +39,6 @@ async function bootstrap() {
     .setTitle('API de Proyectos')
     .setDescription('Documentacion de la api de proyectos')
     .setVersion('1.0')
-    //    .addTag('Proyectos')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
