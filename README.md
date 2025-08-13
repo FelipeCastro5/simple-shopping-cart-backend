@@ -12,7 +12,7 @@ Está diseñado como parte de la prueba técnica en la postulación al rol de De
 
 ---
 
-## 🛠 Tecnologías utilizadas
+## Tecnologías utilizadas
 - **NestJS 11** – Framework principal.
 - **TypeScript** – Tipado estático.
 - **CQRS** – Patrón de separación de responsabilidades.
@@ -37,14 +37,14 @@ Está diseñado como parte de la prueba técnica en la postulación al rol de De
 
 ---
 
-📄 **Notas**:
+**Notas**:
 - Si el `productId` no existe, el endpoint `/cart` (POST) devolverá **400 Bad Request**.
 - Los datos se almacenan **en memoria**, por lo que se reinician al reiniciar el servidor.
 - Documentación interactiva disponible en Swagger:  
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```plaintext
 src/
@@ -72,7 +72,15 @@ src/
 
 ---
 
-## ⚙️ Instrucciones de instalación
+## Instrucciones de instalación
+### A. Requisitos de Node.js
+Para ejecutar este proyecto localmente, necesitarás **Node.js** y **npm** instalados en tu máquina.  
+Puedes descargar Node.js desde [https://nodejs.org](https://nodejs.org).
+
+Se recomienda usar:
+- **Node.js 20.x (LTS)**
+- **npm 9.x**
+
 1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com/FelipeCastro5/simple-shopping-cart-backend.git
@@ -84,6 +92,6 @@ src/
 3. **Ejecución local**
     npm run start
 
-    Backend disponible en: http://localhost:3000
-  
-    Documentación Swagger: http://localhost:3000/swagger/#/
+    - Backend disponible en: http://localhost:3000
+    - Documentación Swagger: http://localhost:3000/swagger/#/
+    > ⚠️ Asegúrate de que este puertos estén libres antes de ejecutar ambos proyectos.
