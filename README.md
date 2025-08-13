@@ -87,12 +87,12 @@ Se recomienda usar:
    git clone https://github.com/FelipeCastro5/simple-shopping-cart-backend.git
    cd simple-shopping-cart-backend
 
-2. **Instalar dependencias**
+2. **Instalar dependencias desde la carpeta razi del proyecto con el comando:**
     npm install
 
-3. **Ejecución local**
+3. **Ejecución local desde la carpeta razi del proyecto con el comando:**
     npm run start
 
     - Backend disponible en: http://localhost:3000
     - Documentación Swagger: http://localhost:3000/swagger/#/
-    > ⚠️ Asegúrate de que este puertos estén libres antes de ejecutar ambos proyectos.
+> ⚠️ Asegúrate de que este puertos estén libres antes de ejecutar ambos proyectos.
