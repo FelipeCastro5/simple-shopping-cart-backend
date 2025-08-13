@@ -81,6 +81,7 @@ Se recomienda usar:
 - **Node.js 20.x (LTS)**
 - **npm 9.x**
 
+###  B. Instalación del Repositorio localmente
 1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com/FelipeCastro5/simple-shopping-cart-backend.git
